@@ -1,5 +1,6 @@
-# scripts
-Collection of utility scripts for Unix systems.
+![](https://dummyimage.com/1200x400/222222/ffffff&text=Scripts)
+
+Collection of utility scripts.
 
 ## How to Run:
 1. Install dependencies (listed in the scripts)
