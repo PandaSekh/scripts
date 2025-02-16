@@ -28,8 +28,7 @@ for f in *.{mp4,mkv,webm,avi,mov,flv,wmv,m4v,ts,webp}; do
     echo "Processing: $f"
 
     # Convert video to H.265 (HEVC) and replace original file.
-    # Use libx265 instead of hevc_videotoolbox for non Apple Silicon
-    ffmpeg -i "$f" -c:v hevc_videotoolbox -preset slow -crf 24 -c:a aac -b:a 128k "${f%.*}_temp.mp4" && mv "${f%.*}_temp.mp4" "$f"
+    ffmpeg -y -i "$f" -c:v libx265 -crf 25 -preset medium -c:a aac -b:a 128k "${f%.*}_temp.mp4" && mv "${f%.*}_temp.mp4" "$f"
 
     echo "Finished: $f"
 done
