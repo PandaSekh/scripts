@@ -11,6 +11,10 @@ Collection of utility scripts.
 ### `ai-commit.sh`
 A shell script that generates commit messages using AI based on staged Git changes.
 
+### `docker_attila.sh`
+This script runs indefinitely, cleaning up all Docker containers, images, volumes, and networks. 
+It is designed for development environments where frequent resets are needed.
+
 ## Video
 ### `compressor.sh`
 A simple shell script to compress videos using FFmpeg with H.265 encoding.
